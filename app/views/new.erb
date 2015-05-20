@@ -1,8 +1,13 @@
-<section>
+<section xmlns="http://www.w3.org/1999/html">
   <h1>Add Something to your Brain Trust</h1>
 
   <form action="/skills" method="post">
-    <input type="text" name="skill">
+    <h3>Enter your new skill</h3>
+      <input type="text" name="skill[name]"><br/>
+    <h3>Describe your new skill</h3>
+    <textarea name="skill[description]"></textarea><br/>
+
+    <input type="submit">
   </form>
 
 </section>
