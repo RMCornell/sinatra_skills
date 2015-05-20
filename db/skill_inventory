@@ -1,0 +1,12 @@
+---
+skills:
+- id: 7
+  name: Being Awesome
+  description: The state of being truly awesome at... well everything.
+- id: 8
+  name: Running
+  description: Mostly away from bears...
+- id: 9
+  name: You know nothing
+  description: Jon Snow!!
+total: 9
