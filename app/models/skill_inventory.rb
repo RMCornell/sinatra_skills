@@ -11,7 +11,25 @@ class SkillInventory
       database['skills'] ||= []
       database['total'] ||= 0
       database['total'] += 1
-      database['skills'] << {'id' => database['total'], 'name' => skill['name'], 'description' => skill['description']}
+      database['skills'] << {"id" => database['total'], "name" => skill['name'], "description" => skill['description']}
     end
+  end
+
+  def self.raw_skills
+    database.transaction do
+      database['skills'] || []
+    end
+  end
+
+  def self.all
+    raw_skills.map {|data| Skill.new(data)}
+  end
+
+  def self.raw_skill(id)
+    raw_skills.find {|data| data["id"] == id}
+  end
+
+  def self.find(id)
+    Skill.new(raw_skill(id))
   end
 end
