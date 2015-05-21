@@ -1,0 +1,9 @@
+<section>
+  <form action="/skills/<%= @skill.id%>" method="post">
+    <p>Edit Skill</p>
+    <input type="hidden" name="_method" value="PUT"/>
+    <input type="test" name="skill[name]" value="<%= @skill.name %>"/><br/>
+    <textarea name="skill[description]"><%= @skill.description %></textarea><br/>
+    <input type="submit"/>
+  </form>
+</section>

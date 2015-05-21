@@ -1,8 +1,8 @@
 require 'bundler'
 Bundler.require
 
-$LOAD_PATH.unshift(File.expand_path(File.dirname(__FILE__) + "/app"))
+require ::File.expand_path('../config/environment', __FILE__)
+#the :: is escaping it so that the File returns to look globally instead of looking at the instance of a particular class
 
-require 'controllers/skill_inventory_app'
 
 run SkillInventoryApp
