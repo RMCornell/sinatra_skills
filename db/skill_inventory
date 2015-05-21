@@ -1,3 +1,13 @@
 ---
-skills: []
-total: 11
+skills:
+- id: 12
+  name: Inability to Write Unit Tests at 2345 at night
+  description: Yup That appears to be at thing... But I can edit that thing
+- id: 13
+  name: Inability to Style worth a dam
+  description: 'Yup.  I understand me some CSS... I just lack creativity to put it
+    into play. '
+- id: 14
+  name: Inability to stay consistent when naming buttons
+  description: Yup I got some named delete and others named "delete skill"  I'm awesome
+total: 14

@@ -14,7 +14,7 @@ class SkillInventory
       database['skills'] ||= []
       database['total'] ||= 0
       database['total'] += 1
-      database['skills'] << {"id" => database['total'], "name" => skill['name'], "description" => skill['description']}
+      database['skills'] << {"id" => database['total'], "name" => skill[:name], "description" => skill[:description]}
     end
   end
 
@@ -53,7 +53,7 @@ class SkillInventory
   def self.delete_all
     database.transaction do
       database['skill'] = []
-      databsee['total'] = 0
+      database['total'] = 0
     end
   end
 end
